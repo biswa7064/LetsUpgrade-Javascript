@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script>
+            function showAge(){
+            for(var key1 in array){
+                    
+                    if(array[key1]['age'] < 30) {
+                  console.log(array[key1]);
+                  }
+                  }
+            }
+
+            function showCountry(){
+            for(var key2 in array){
+                    
+                    if(array[key2]['country'] == "India") {
+                  console.log(array[key2]);
+                  }
+                  }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <script>
+            
+            var array = [{
+                name : "Biswa",
+                age :23,
+                country : "India",
+                hobbies : ["cookng", "drawing"]
+            },
+            {
+                name: "Pragyan",
+                age : 21,
+                country : "India",
+                hobbies : ["singing", "reading"]
+
+            },
+            {
+                name: "mamuni",
+                age : 32,
+                country : "USA",
+                hobbies : ["dancing", "drawing"]
+                
+            },
+            {
+                name: "Babu",
+                age : 30,
+                country : "India",
+                hobbies : ["gardenng", "drawing"]
+            }];
+             
+                  
+           console.log("objects having age less than 30 : ");
+           showAge() ;
+           
+           console.log("Country india : ");
+           showCountry();
+        </script>
+    </body>
+</html>

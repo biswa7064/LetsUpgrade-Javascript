@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function copyText(){
+               var firstText = document.querySelector('#first').value;
+               var secondText = document.querySelector('#second');
+               secondText.value = firstText;
+            }
+        </script>
+    </head>
+    <body>
+        <label for = 'originalText'>Orignaltext</label>
+        <input type = "text" id = "first" name = "originalText"/><br><br>
+        <button id = "button" type = "button" onclick="copyText();">Copy</button><br><br>
+        <label for = 'copiedText'>Orignaltext</label>
+        <input type = "text" id = "second" name = "copiedText"/>
+
+    </body>
+</html>

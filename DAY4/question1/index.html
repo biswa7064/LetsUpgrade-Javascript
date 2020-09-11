@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+        function imageChange(image){
+                document.getElementById("img").src = image;
+        }
+        </script>
+    </head>
+    <body>
+        <div id = "main-image">
+            <img src = "1.jpg" id = "img" style = "width: 800px;height: 500px;">
+        </div>
+        <div>
+            <button id = "for-img-1" onClick = "imageChange('1.jpg')">Firstbutton</button>
+            <button id = "for-img-2" onclick="imageChange('2.jpg')">Secondbutton</button>
+            <button id = "for-img-3" onclick="imageChange('3.jpg')">Thirdbutton</button>
+        </div>
+    </body>
+</html>
